@@ -3,7 +3,7 @@ class CreateMonths < ActiveRecord::Migration
     create_table :months do |t|
       t.string :name
       
-      t.integer :kirija, default: "15000"
+      t.integer :kirija, default: "15500"
       t.integer :struja
       t.integer :voda
       t.integer :internet, default: "850"
@@ -34,6 +34,8 @@ class CreateMonths < ActiveRecord::Migration
       t.boolean :gare_internet
 
       t.timestamps null: false
-    end
+      end
+    
+    
   end
 end

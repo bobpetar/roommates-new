@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161006220643) do
+ActiveRecord::Schema.define(version: 20161006234926) do
 
   create_table "months", force: :cascade do |t|
     t.string   "name"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20161006220643) do
     t.boolean  "gare_internet"
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
+    t.integer  "kirija_nova",    default: 15500
   end
 
 end
