@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  kirija: 1
+  struja: 1
+  voda: 1
+  internet: 1
+  zgrada: 1
+  petar_kirija: false
+  petar_struja: false
+  petar_voda: false
+  petar_zgrada: false
+  petar_internet: false
+  brane_kirija: false
+  brane_struja: false
+  brane_voda: false
+  brane_zgrada: false
+  brane_internet: false
+  dmz_kirija: false
+  dmz_struja: false
+  dmz_voda: false
+  dmz_zgrada: false
+  dmz_internet: false
+  gare_kirija: false
+  gare_struja: false
+  gare_voda: false
+  gare_zgrada: false
+  gare_internet: false
+
+two:
+  name: MyString
+  kirija: 1
+  struja: 1
+  voda: 1
+  internet: 1
+  zgrada: 1
+  petar_kirija: false
+  petar_struja: false
+  petar_voda: false
+  petar_zgrada: false
+  petar_internet: false
+  brane_kirija: false
+  brane_struja: false
+  brane_voda: false
+  brane_zgrada: false
+  brane_internet: false
+  dmz_kirija: false
+  dmz_struja: false
+  dmz_voda: false
+  dmz_zgrada: false
+  dmz_internet: false
+  gare_kirija: false
+  gare_struja: false
+  gare_voda: false
+  gare_zgrada: false
+  gare_internet: false

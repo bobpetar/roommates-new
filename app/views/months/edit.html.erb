@@ -1,0 +1,104 @@
+<h1>Editing Month</h1>
+
+<%= form_for(@month) do |f| %>
+  <% if @month.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@month.errors.count, "error") %> prohibited this month from being saved:</h2>
+
+      <ul>
+      <% @month.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :kirija %><br>
+    <%= f.number_field :kirija %>
+  </div>
+  <div class="field">
+    <%= f.label :struja %><br>
+    <%= f.number_field :struja %>
+  </div>
+  <div class="field">
+    <%= f.label :voda %><br>
+    <%= f.number_field :voda %>
+  </div>
+  <div class="field">
+    <%= f.label :internet %><br>
+    <%= f.number_field :internet %>
+  </div>
+  <div class="field">
+    <%= f.label :zgrada %><br>
+    <%= f.number_field :zgrada %>
+  </div>
+  
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Smetki</th>
+      <th>Petar</th>
+      <th>Brane</th>
+      <th>Dmz</th>
+      <th>Gare</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      
+    <tr>
+      <td>Kirija</td>
+      <td><%= f.check_box :petar_kirija %></td>
+      <td><%= f.check_box :brane_kirija %></td>
+      <td><%= f.check_box :dmz_kirija %></td>
+      <td><%= f.check_box :gare_kirija %></td>
+    </tr>
+    
+    <tr>
+      <td>Struja</td>
+      <td><%= f.check_box :petar_struja %></td>
+      <td><%= f.check_box :brane_struja %></td>
+      <td><%= f.check_box :dmz_struja %></td>
+      <td><%= f.check_box :gare_struja %></td>
+    </tr>
+    
+    <tr>
+      <td>Voda</td>
+      <td><%= f.check_box :petar_voda %></td>
+      <td><%= f.check_box :brane_voda %></td>
+      <td><%= f.check_box :dmz_voda %></td>
+      <td><%= f.check_box :gare_voda %></td>
+    </tr>
+    
+    <tr>
+      <td>Zgrada</td>
+      <td><%= f.check_box :petar_zgrada %></td>
+      <td><%= f.check_box :brane_zgrada %></td>
+      <td><%= f.check_box :dmz_zgrada %></td>
+      <td><%= f.check_box :gare_zgrada %></td>
+    </tr>
+    
+    <tr>
+      <td>Internet</td>
+      <td><%= f.check_box :petar_internet %></td>
+      <td><%= f.check_box :brane_internet %></td>
+      <td><%= f.check_box :dmz_internet %></td>
+      <td><%= f.check_box :gare_internet %></td>
+    </tr>
+    
+  </tbody>
+</table>
+
+  
+  <div class="actions">
+    <%= f.submit :class => "btn btn-success"  %>
+  </div>
+<% end %>
+
+
+<%= link_to 'Doma', root_path, class: "btn btn-info" %>

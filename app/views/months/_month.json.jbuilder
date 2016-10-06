@@ -1,0 +1,2 @@
+json.extract! month, :id, :name, :kirija, :struja, :voda, :internet, :zgrada, :petar_kirija, :petar_struja, :petar_voda, :petar_zgrada, :petar_internet, :brane_kirija, :brane_struja, :brane_voda, :brane_zgrada, :brane_internet, :dmz_kirija, :dmz_struja, :dmz_voda, :dmz_zgrada, :dmz_internet, :gare_kirija, :gare_struja, :gare_voda, :gare_zgrada, :gare_internet, :created_at, :updated_at
+json.url month_url(month, format: :json)
